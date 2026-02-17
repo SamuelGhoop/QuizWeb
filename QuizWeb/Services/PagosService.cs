@@ -76,8 +76,7 @@ namespace QuizWeb.Services
             if (pago == null) return false;
             if (pago.isActive && pago.mora != "si")
             {
-                throw new Exception("El total de pago realizado sin multa es: " + pago.monto);
-                return true;
+                throw new Exception("El total de pago realizado sin multa es: " + pago.monto);  //muestra el total a pagar y actualiza los campos en la lista
                 
             }
             pago.mora = "no";
