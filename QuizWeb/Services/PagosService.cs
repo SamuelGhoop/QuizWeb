@@ -80,6 +80,7 @@ namespace QuizWeb.Services
                 return true;
                 
             }
+            pago.mora = "no";
             pago.estado = "pagado";
 
             if (pago.isActive && pago.mora == "si")
